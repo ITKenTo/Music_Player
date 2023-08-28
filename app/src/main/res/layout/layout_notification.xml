@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/back_music"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_garden"
+        >
+        <TextView
+            android:id="@+id/tv_tilte"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="72dp"
+            android:text="Nơi này có anh"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            />
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sơn Tùng MTP"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:layout_below="@+id/tv_tilte"
+            android:layout_alignStart="@id/tv_tilte"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/playbutton"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
